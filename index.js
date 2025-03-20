@@ -1,5 +1,3 @@
-document.getElementById('feedbackForm').addEventListener('submit', function(e) {
-    e.preventDefault();
 function validateForm() {
     const name = document.getElementById('name').value.trim();
     const age = document.getElementById('age').value.trim();
@@ -9,7 +7,7 @@ function validateForm() {
     const state = document.getElementById('state').value.trim();
     const zip = document.getElementById('zip').value.trim();
     const email = document.getElementById('email').value.trim();
-   
+    const message = document.getElementById('message').value.trim();
 
     let errors = [];//setting errors as an arry in order to push more than one out at once
 
@@ -25,12 +23,15 @@ function validateForm() {
     if (!/^\d{5}(-\d{4})?$/.test(zip)) errors.push("Please enter a valid 5-digit ZIP code.");//uses a regex to validate zip
 
    
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.push("Please enter a valid email address."); //uses a regex to validate email
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.push("Please enter a valid email address."); //uses a regex to validate email 
+    // just accepts anything after @whatever.whatever = not good
+    
 
  
     if (!street) errors.push("Street cannot be empty.");
     if (!city) errors.push("City cannot be empty.");
     if (!state) errors.push("State cannot be empty.");
+    if (!message) errors.push("please say somthing about my code Please")
  
 
     if (errors.length > 0) {
@@ -45,3 +46,4 @@ document.getElementById('feedbackForm').addEventListener('submit', function (e) 
         e.preventDefault(); 
     };
 })
+
