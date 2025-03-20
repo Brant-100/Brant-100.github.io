@@ -1,13 +1,23 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    padding: 20px;
- }
+        font-family: Arial, sans-serif;
+        background-image: linear-gradient(to bottom right, rgb(247, 127, 127), rgb(240, 191, 101), rgb(243, 241, 117) , rgb(209, 247, 106), rgb(169, 169, 250));
+        padding: 20px;
+        text-align: center;
+        margin: auto;
+        width: 75%;
+}
+.form {
+
+        width: 10%;
+        border: 3px darkblue; 
+        padding: 10px;
+    
+}
  
  
  form {
-    background-color: #ffffff;
-    padding: 15px;
+    background-color: rgb(241, 226, 238);
+    padding: 55px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
  }
@@ -15,16 +25,19 @@ body {
  
  input, textarea {
     display: block;
-    width: 100%;
-    margin-bottom: 10px;
+    width: 50%;
+    margin-bottom: 30px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
  }
  
  
  button {
-    background-color: #007BFF;
+    background-color: rgb(255, 150, 168);
     color: #fff;
-    border: none;
+    border: 5px rgb(255, 150, 168);
     padding: 10px 20px;
     cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
  }
- 
