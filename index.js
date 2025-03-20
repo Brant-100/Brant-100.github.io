@@ -7,7 +7,7 @@ function validateForm() {
     const state = document.getElementById('state').value.trim();
     const zip = document.getElementById('zip').value.trim();
     const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
+   
 
     let errors = [];//setting errors as an arry in order to push more than one out at once
 
