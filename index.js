@@ -13,8 +13,7 @@ document.getElementById('feedbackForm').addEventListener('submit', function(e) {
     const message = document.getElementById('message').value;
  
  
-    //! This part is the challenge. You need to add validation for the form below. If any of the fields are invalid, alert the user and return from the function.
-    // Add Validation for the form below. If any of the fields are invalid, alert the user and return from the function.
+    
  
  
     alert('Feedback submitted successfully!');
