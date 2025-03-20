@@ -9,8 +9,9 @@
 
   <body>
     <div>
-      <h1>Unbreakable form</h1>
-      <form>
+      <form id="feedbackForm">
+        <h1>Unbreackable form</h1>
+
         Name: <input id="name" placeholder="ex: Alyssa Emmerson" /><br /><br />
         <!-- Hint: Add the type you want the form field to be here. Text?-->
         Age: <input id="age" placeholder="ex: 16" /><br /><br />
@@ -35,14 +36,11 @@
           placeholder="please wirte any feedback here"
         ></textarea
         ><br /><br />
-        <!-- Hint: Add the type you want the form field to be here. Textarea?-->
-        <button name="submit" type="submit">Submit</button><br />
-        <!-- Hint: What type of button should this be?-->
+
+        <button type="submit" onclick="validateForm()">Submit</button><br />
       </form>
     </div>
 
-    <script>
-      src = "index.js";
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
