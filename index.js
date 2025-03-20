@@ -1,3 +1,5 @@
+document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+    e.preventDefault();
 function validateForm() {
     const name = document.getElementById('name').value.trim();
     const age = document.getElementById('age').value.trim();
